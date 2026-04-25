@@ -1,8 +1,4 @@
 
-as_snapshot = False
-num_years = 3
-decimal_sep = "."
-
 def export_to_zip(
     dict_df,
     table_script_path="assets/sql_table_script.txt",
@@ -20,11 +16,11 @@ def export_to_zip(
 
     sep = ";" if decimal == "," else ","
 
-    subfolder = "decimal_comma" if decimal == "," else "decimal_point"
+    path_component = "decimal_comma" if decimal == "," else "decimal_point"
 
     outer_zip_path = (
-        f"data/{subfolder}/airline_data_snapshot.zip" if is_snapshot
-        else f"data/{subfolder}/airline_data_{n_years}y.zip"
+        f"data/airline_data_snapshot_{path_component}.zip" if is_snapshot
+        else f"data/airline_data_{n_years}y_{path_component}.zip"
     )
 
     # load static files

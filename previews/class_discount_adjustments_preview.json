@@ -1,0 +1,20 @@
+[
+  {
+    "class_id":"(01) Economy",
+    "class_name":"Economy",
+    "discount_factor":1.0,
+    "description":"full frequent flyer discount applies"
+  },
+  {
+    "class_id":"(02) Business",
+    "class_name":"Business",
+    "discount_factor":0.7,
+    "description":"reduced frequent flyer discount in premium cabin"
+  },
+  {
+    "class_id":"(03) First",
+    "class_name":"First",
+    "discount_factor":0.5,
+    "description":"heavily reduced frequent flyer discount in premium cabin"
+  }
+]

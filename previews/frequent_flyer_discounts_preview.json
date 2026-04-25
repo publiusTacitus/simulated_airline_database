@@ -1,0 +1,26 @@
+[
+  {
+    "frequent_flyer_status_id":"(0) No Status",
+    "frequent_flyer_status":"No status",
+    "min_flights_yearly":0,
+    "base_discount":0.0
+  },
+  {
+    "frequent_flyer_status_id":"(1) Silver",
+    "frequent_flyer_status":"Silver",
+    "min_flights_yearly":3,
+    "base_discount":0.05
+  },
+  {
+    "frequent_flyer_status_id":"(2) Gold",
+    "frequent_flyer_status":"Gold",
+    "min_flights_yearly":6,
+    "base_discount":0.1
+  },
+  {
+    "frequent_flyer_status_id":"(3) Platinum",
+    "frequent_flyer_status":"Platinum",
+    "min_flights_yearly":18,
+    "base_discount":0.18
+  }
+]

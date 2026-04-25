@@ -1,0 +1,65 @@
+[
+  {
+    "flight_number":"FL136130",
+    "flight_date":1761264000000,
+    "class_id":"(01) Economy",
+    "capacity":160,
+    "class_bookings":144
+  },
+  {
+    "flight_number":"FL136130",
+    "flight_date":1761264000000,
+    "class_id":"(02) Business",
+    "capacity":29,
+    "class_bookings":24
+  },
+  {
+    "flight_number":"FL136130",
+    "flight_date":1761264000000,
+    "class_id":"(03) First",
+    "capacity":0,
+    "class_bookings":0
+  },
+  {
+    "flight_number":"FL156094",
+    "flight_date":1743811200000,
+    "class_id":"(01) Economy",
+    "capacity":90,
+    "class_bookings":50
+  },
+  {
+    "flight_number":"FL156094",
+    "flight_date":1743811200000,
+    "class_id":"(02) Business",
+    "capacity":0,
+    "class_bookings":0
+  },
+  {
+    "flight_number":"FL156094",
+    "flight_date":1743811200000,
+    "class_id":"(03) First",
+    "capacity":0,
+    "class_bookings":0
+  },
+  {
+    "flight_number":"FL192503",
+    "flight_date":1750550400000,
+    "class_id":"(01) Economy",
+    "capacity":202,
+    "class_bookings":192
+  },
+  {
+    "flight_number":"FL192503",
+    "flight_date":1750550400000,
+    "class_id":"(02) Business",
+    "capacity":54,
+    "class_bookings":47
+  },
+  {
+    "flight_number":"FL192503",
+    "flight_date":1750550400000,
+    "class_id":"(03) First",
+    "capacity":14,
+    "class_bookings":10
+  }
+]

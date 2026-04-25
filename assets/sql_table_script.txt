@@ -1,0 +1,178 @@
+
+-- AIRPORTS
+create table airports (
+airport_code char(3) primary key,
+airport_name varchar(100),
+city varchar(50),
+country varchar(50),
+climate_region varchar(50),
+is_maritime boolean,
+latitude  numeric(9,6),
+longitude numeric(9,6),
+hub_status varchar(20)
+);
+
+-- AIRCRAFT
+create table aircraft (
+aircraft_id char(10) primary key,
+model varchar(50),
+manufacturer varchar(50),
+seat_capacity int,
+range_km int,
+manufacture_year int
+);
+
+-- ROUTES
+create table routes (
+line_number serial primary key,
+route_name varchar(50),
+departure_airport_code char(3),
+arrival_airport_code char(3),
+distance_km int,
+flights_per_day int,
+expd_avg_price_economy numeric(8,2),
+expd_avg_price_business numeric(8,2),
+expd_avg_price_first numeric(8,2),
+
+foreign key (departure_airport_code) references airports(airport_code),
+foreign key (arrival_airport_code) references airports(airport_code)
+);
+
+-- WEATHER
+create table weather (
+weather_id serial primary key,
+airport_code char(3),
+observation_time timestamp,
+season varchar(20),
+condition varchar(50),
+intensity varchar(20),
+visibility_km numeric(4,1),
+wind_speed_kts numeric(5,1),
+precip_mm_per_hr numeric(5,1),
+weather_block_id int,
+
+foreign key (airport_code) references airports(airport_code)
+);
+
+-- FLIGHTS
+create table flights (
+flight_number varchar(10),
+flight_date date,
+line_number int,
+aircraft_id char(10),
+bookings_total int,
+passengers_total int,
+scheduled_departure timestamp,
+scheduled_arrival timestamp,
+actual_departure timestamp,
+actual_arrival timestamp,
+is_cancelled boolean,
+cancellation_reason text,
+delay_reason_dep text,
+delay_reason_arr text,
+
+primary key (flight_number, flight_date),
+foreign key (line_number) references routes(line_number),
+foreign key (aircraft_id) references aircraft(aircraft_id)
+);
+
+-- COSTS PER FLIGHT
+create table costs_per_flight (
+flight_cost_id varchar(20) primary key,
+flight_number varchar(10),
+flight_date date,
+flight_cost_total numeric(10,2),
+fuel_cost numeric(10,2),
+crew_cost numeric(10,2),
+maintenance_cost numeric(10,2),
+landing_fees numeric(10,2),
+catering_cost numeric(10,2),
+other_costs numeric(10,2),
+
+foreign key (flight_number, flight_date) references flights(flight_number, flight_date)
+);
+
+-- FREQUENT FLYER DISCOUNTS
+create table frequent_flyer_discounts (
+frequent_flyer_status_id varchar(20) primary key,
+frequent_flyer_status varchar(20),
+min_flights_yearly int,
+base_discount numeric(5,2)
+);
+
+-- CLASS DISCOUNT ADJUSTMENTS
+create table class_discount_adjustments (
+class_id varchar(20) primary key,
+class_name varchar(20),
+discount_factor numeric(5,2),
+description text
+);
+
+-- FLIGHT CAPACITY BY CLASS
+create table flight_capacity_by_class (
+flight_number varchar(10),
+flight_date date,
+class_id varchar(20),
+capacity int,
+class_bookings int,
+
+primary key (flight_number, flight_date, class_id),
+foreign key (flight_number, flight_date) references flights(flight_number, flight_date),
+foreign key (class_id) references class_discount_adjustments(class_id)
+);
+
+-- FLIGHT CLASS COST SHARES
+create table flight_class_cost_shares (
+cost_share_id varchar(20) primary key,
+flight_number varchar(10),
+flight_date date,
+class_id varchar(20),
+cost_share numeric(4,2),
+
+foreign key (flight_number, flight_date) references flights(flight_number, flight_date),
+foreign key (class_id) references class_discount_adjustments(class_id)
+);
+
+-- TRAVELLER TYPE LOOKUP
+create table traveller_type_lookup (
+traveller_type_id varchar(20) primary key,
+traveller_type varchar(30),
+annual_bookings_expd_min int,
+annual_bookings_expd_max int
+);
+
+-- CUSTOMERS
+create table customers (
+customer_id serial primary key,
+full_name varchar(100),
+email varchar(100),
+phone varchar(30),
+date_of_birth date,
+nationality varchar(50),
+gender varchar(10),
+frequent_flyer_status_id varchar(20),
+traveller_type_id varchar(20),
+
+foreign key (frequent_flyer_status_id) references frequent_flyer_discounts(frequent_flyer_status_id),
+foreign key (traveller_type_id) references traveller_type_lookup(traveller_type_id)
+);
+
+-- BOOKINGS
+create table bookings (
+booking_id serial,
+flight_date date,
+customer_id int,
+flight_number varchar(10),
+booking_time timestamp,
+class_id varchar(20),
+frequent_flyer_status_id varchar(20),
+price_paid numeric(8,2),
+is_checked_in boolean,
+has_cancellation_refund boolean,
+net_revenue numeric(8,2),
+
+primary key (booking_id, flight_date),
+foreign key (flight_number, flight_date) references flights(flight_number, flight_date),
+foreign key (customer_id) references customers(customer_id),
+foreign key (frequent_flyer_status_id) references frequent_flyer_discounts(frequent_flyer_status_id)
+);

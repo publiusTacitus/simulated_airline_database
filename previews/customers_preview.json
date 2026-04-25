@@ -1,0 +1,112 @@
+[
+  {
+    "customer_id":580660,
+    "full_name":"Naomi Morgan",
+    "email":"naomi.morgan2@gmail.com",
+    "phone":"3838753893",
+    "date_of_birth":1115359200000,
+    "nationality":"Singapore",
+    "gender":"Male",
+    "frequent_flyer_status_id":"(1) Silver",
+    "traveller_type_id":"(03) Corporate"
+  },
+  {
+    "customer_id":1498002,
+    "full_name":"Josephine Marshall",
+    "email":"josephine.marshall2@yahoo.com",
+    "phone":"4817222647",
+    "date_of_birth":-176774400000,
+    "nationality":"Qatar",
+    "gender":"Female",
+    "frequent_flyer_status_id":"(0) No Status",
+    "traveller_type_id":"(01) Leisure"
+  },
+  {
+    "customer_id":1585475,
+    "full_name":"Adele Meunier",
+    "email":"adele.meunier4@gmail.com",
+    "phone":"3384261202",
+    "date_of_birth":955324800000,
+    "nationality":"Belgium",
+    "gender":"Male",
+    "frequent_flyer_status_id":"(0) No Status",
+    "traveller_type_id":"(02) Family"
+  },
+  {
+    "customer_id":2022311,
+    "full_name":"Brittany Baldwin",
+    "email":"brittany.baldwin@gmail.com",
+    "phone":"8173818299",
+    "date_of_birth":981698400000,
+    "nationality":"United States",
+    "gender":"Male",
+    "frequent_flyer_status_id":"(0) No Status",
+    "traveller_type_id":"(01) Leisure"
+  },
+  {
+    "customer_id":2271165,
+    "full_name":"Lilly Stadler",
+    "email":"lilly.stadler1@gmail.com",
+    "phone":"5350839212",
+    "date_of_birth":577411200000,
+    "nationality":"Austria",
+    "gender":"Female",
+    "frequent_flyer_status_id":"(0) No Status",
+    "traveller_type_id":"(01) Leisure"
+  },
+  {
+    "customer_id":2666822,
+    "full_name":"Emma Boddaugh",
+    "email":"emma.boddaugh@yahoo.com",
+    "phone":"4453679244",
+    "date_of_birth":778420800000,
+    "nationality":"Netherlands",
+    "gender":"Female",
+    "frequent_flyer_status_id":"(1) Silver",
+    "traveller_type_id":"(03) Corporate"
+  },
+  {
+    "customer_id":2847905,
+    "full_name":"Rosemary Brooks",
+    "email":"rosemary.brooks5@gmail.com",
+    "phone":"5057024819",
+    "date_of_birth":478850400000,
+    "nationality":"Qatar",
+    "gender":"Male",
+    "frequent_flyer_status_id":"(1) Silver",
+    "traveller_type_id":"(03) Corporate"
+  },
+  {
+    "customer_id":3258932,
+    "full_name":"Roselinde Metz",
+    "email":"roselinde.metz@gmail.com",
+    "phone":"6790156615",
+    "date_of_birth":579312000000,
+    "nationality":"Germany",
+    "gender":"Male",
+    "frequent_flyer_status_id":"(0) No Status",
+    "traveller_type_id":"(01) Leisure"
+  },
+  {
+    "customer_id":3962352,
+    "full_name":"Maria Luisa da Rosa",
+    "email":"marialuisa.darosa3@gmail.com",
+    "phone":"3089192798",
+    "date_of_birth":789069600000,
+    "nationality":"Brazil",
+    "gender":"Female",
+    "frequent_flyer_status_id":"(0) No Status",
+    "traveller_type_id":"(01) Leisure"
+  },
+  {
+    "customer_id":4076803,
+    "full_name":"Julia Morris",
+    "email":"julia.morris7@outlook.com",
+    "phone":"3252416566",
+    "date_of_birth":-672537600000,
+    "nationality":"Jordan",
+    "gender":"Female",
+    "frequent_flyer_status_id":"(0) No Status",
+    "traveller_type_id":"(01) Leisure"
+  }
+]

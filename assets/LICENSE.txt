@@ -1,0 +1,27 @@
+-------
+License
+-------
+
+This dataset and accompanying materials are licensed under
+Creative Commons Attribution-NonCommercial 4.0 International
+(CC BY-NC 4.0).
+
+You may use, copy, adapt, and share this material for:
+- Learning and training
+- Academic research
+- Teaching
+- Non-commercial analytical projects
+
+Conditions:
+- Attribution is required.
+- Commercial use is not allowed without permission.
+
+If this dataset is used in published research, articles,
+presentations, or public-facing projects, please provide
+appropriate credit to the dataset author.
+
+Suggested attribution:
+
+Simulated Airline Database by Jan H. Schüttler
+https://github.com/publiusTacitus
+Licensed under CC BY-NC 4.0

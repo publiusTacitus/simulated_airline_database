@@ -1,0 +1,112 @@
+[
+  {
+    "airport_code":"AMM",
+    "airport_name":"Queen Alia International Airport",
+    "city":"Amman",
+    "country":"Jordan",
+    "climate_region":"Desert",
+    "is_maritime":false,
+    "latitude":31.7226,
+    "longitude":35.9932,
+    "hub_status":"No hub"
+  },
+  {
+    "airport_code":"BRU",
+    "airport_name":"Brussels Airport",
+    "city":"Brussels",
+    "country":"Belgium",
+    "climate_region":"Temperate",
+    "is_maritime":true,
+    "latitude":50.9014,
+    "longitude":4.4844,
+    "hub_status":"No hub"
+  },
+  {
+    "airport_code":"DOH",
+    "airport_name":"Hamad International Airport",
+    "city":"Doha",
+    "country":"Qatar",
+    "climate_region":"Desert",
+    "is_maritime":true,
+    "latitude":25.2736,
+    "longitude":51.6081,
+    "hub_status":"No hub"
+  },
+  {
+    "airport_code":"FRA",
+    "airport_name":"Frankfurt Airport",
+    "city":"Frankfurt",
+    "country":"Germany",
+    "climate_region":"Temperate",
+    "is_maritime":false,
+    "latitude":50.0379,
+    "longitude":8.5622,
+    "hub_status":"Primary"
+  },
+  {
+    "airport_code":"HAM",
+    "airport_name":"Hamburg Airport",
+    "city":"Hamburg",
+    "country":"Germany",
+    "climate_region":"Temperate",
+    "is_maritime":true,
+    "latitude":53.6304,
+    "longitude":9.9882,
+    "hub_status":"No hub"
+  },
+  {
+    "airport_code":"ICN",
+    "airport_name":"Incheon International Airport",
+    "city":"Seoul",
+    "country":"South Korea",
+    "climate_region":"Temperate",
+    "is_maritime":true,
+    "latitude":37.4602,
+    "longitude":126.4407,
+    "hub_status":"No hub"
+  },
+  {
+    "airport_code":"LIS",
+    "airport_name":"Humberto Delgado Airport",
+    "city":"Lisbon",
+    "country":"Portugal",
+    "climate_region":"Mediterranean",
+    "is_maritime":true,
+    "latitude":38.7742,
+    "longitude":-9.1342,
+    "hub_status":"No hub"
+  },
+  {
+    "airport_code":"MUC",
+    "airport_name":"Munich Airport",
+    "city":"Munich",
+    "country":"Germany",
+    "climate_region":"Temperate",
+    "is_maritime":false,
+    "latitude":48.3538,
+    "longitude":11.7861,
+    "hub_status":"No hub"
+  },
+  {
+    "airport_code":"SIN",
+    "airport_name":"Singapore Changi Airport",
+    "city":"Singapore",
+    "country":"Singapore",
+    "climate_region":"Tropical",
+    "is_maritime":true,
+    "latitude":1.3644,
+    "longitude":103.9915,
+    "hub_status":"No hub"
+  },
+  {
+    "airport_code":"WAW",
+    "airport_name":"Warsaw Chopin Airport",
+    "city":"Warsaw",
+    "country":"Poland",
+    "climate_region":"Cold",
+    "is_maritime":false,
+    "latitude":52.1657,
+    "longitude":20.9671,
+    "hub_status":"No hub"
+  }
+]

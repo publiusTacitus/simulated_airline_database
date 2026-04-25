@@ -1,10 +1,10 @@
 
 def create_tables(
-    only_snapshot=as_snapshot,
+    only_snapshot=False,
     month_snapshot=5,
     start_year=2024,
     n_years=1,
-    rng_seed=seed_for_rng,
+    rng_seed=50,
     show_diagnostics=False
 ):
 

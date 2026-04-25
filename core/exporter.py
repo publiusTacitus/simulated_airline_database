@@ -1,13 +1,13 @@
 
 def export_to_zip(
     dict_df,
-    table_script_path="assets/sql_table_script.txt",
+    is_snapshot=False,
+    decimal='.',
+    n_years=1,
     db_script_path="core/db_creator.py",
     readme_path="../assets/README.txt",
     license_path="../assets/LICENSE.txt",
-    is_snapshot=as_snapshot,
-    decimal=decimal_sep,
-    n_years=num_years
+    table_script_path="assets/sql_table_script.txt",
 ):
 
     import zipfile

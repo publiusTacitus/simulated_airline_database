@@ -70,6 +70,10 @@ decimal = st.sidebar.radio(
     [".",","]
 )
 
+if (dataset, decimal) not in asset_lookup:
+    st.sidebar.error("Download unavailable.")
+    st.stop()
+
 selected_asset = asset_lookup[(dataset, decimal)]
 
 download_url = selected_asset["url"]

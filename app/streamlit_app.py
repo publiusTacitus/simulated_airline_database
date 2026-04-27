@@ -230,5 +230,5 @@ with tab4:
 
     st.link_button(
         "Author LinkedIn",
-        "https://linkedin.com/in/..."
+        "https://www.linkedin.com/in/jan-heinrich-sch%C3%BCttler-64b872396/"
     )

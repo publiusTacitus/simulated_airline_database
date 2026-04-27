@@ -1,9 +1,9 @@
 
 def create_tables(
     only_snapshot=False,
-    month_snapshot=5,
     start_year=2024,
     n_years=1,
+    month_snapshot=5,
     rng_seed=50,
     show_diagnostics=False
 ):

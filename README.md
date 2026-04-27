@@ -1,1 +1,21 @@
-...
+## Simulation Features
+
+- **Network**: 42 airports, 142 routes, 264 daily flights
+    - Primary hub: Frankfurt (FRA)
+    - Secondary hubs: London (LHR), Paris (CDG)
+    - ~68% short-haul, ~24% medium-haul, ~8% long-haul
+- **Fleet**: 68 aircraft across multiple models and manufacturers
+- **Scheduling**: Aircraft assigned based on real availability; multi-day loops and weather effects
+- **Weather Simulation**: Localized conditions influence delays and cancellations
+- **Demand Modeling**: Affected by route identity, year, season, weekday, holidays, and randomness
+- **Operational Realism**: Turnaround time varies by aircraft size and route distance
+- **Financial Logic**:
+  - Base fares determined by distance and cabin class
+  - Effective fares adjusted by demand, booking lead times, discounts, and price dispersion
+  - Flight costs split into fuel, crew, maintenance, and class-level cost shares
+- **Customer Behavior**:
+  - Loyalty tier and traveller type based on customer booking frequencies and demographics
+  - Traveller type, age, gender, and demand affect
+    - Cabin class preferences
+    - Check-in likelihoods
+    - Booking lead times

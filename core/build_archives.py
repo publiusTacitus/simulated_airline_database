@@ -1,10 +1,10 @@
 
 def export_to_zip(
     dict_df,
+    file_name_suffix="default",
     is_snapshot=False,
     decimal='.',
-    n_years=1,
-    db_script_path="core/db_creator.py",
+    db_script_path="core/create_sql_database.py",
     readme_path="../assets/README.txt",
     license_path="../assets/LICENSE.txt",
     table_script_path="assets/sql_table_script.txt",
@@ -16,12 +16,7 @@ def export_to_zip(
 
     sep = ";" if decimal == "," else ","
 
-    path_component = "decimal_comma" if decimal == "," else "decimal_point"
-
-    outer_zip_path = (
-        f"data/airline_data_snapshot_{path_component}.zip" if is_snapshot
-        else f"data/airline_data_{n_years}y_{path_component}.zip"
-    )
+    outer_zip_path = f"data/airline_data_{file_name_suffix}.zip"
 
     # load static files
     with open(table_script_path, "r", encoding="utf-8") as f:
@@ -29,6 +24,17 @@ def export_to_zip(
 
     with open(db_script_path, "r", encoding="utf-8") as f:
         sql_db_script = f.read()
+
+    db_script_call = f"""
+    create_sql_database(
+        dbc=db_config,
+        decimal="{decimal}",
+        customers_has_noise=customers_is_noisy,
+        reset_database=is_rerun
+    )
+    """
+
+    sql_db_script += db_script_call
 
     # build inner zip in memory
 

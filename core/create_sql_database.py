@@ -45,7 +45,7 @@ decimal_sep = "."
 def create_sql_database(
     dbc,
     decimal,
-    zip_path,
+    zip_path="airline_data.zip",
     customers_has_noise=False,
     reset_database=False
 ):
@@ -223,11 +223,3 @@ def create_sql_database(
 
     print("Database populated.")
 
-
-create_sql_database(
-    dbc=db_config,
-    decimal=decimal_sep,
-    zip_path="airline_data.zip",
-    customers_has_noise=customers_is_noisy,
-    reset_database=is_rerun
-)

@@ -4,6 +4,7 @@ def generate_and_export(upload_assets=True, diagnostics=False):
     from core.generate_tables import create_tables
     from core.build_archives import export_to_zip
     from core.upload_release_assets import sync_release_assets
+    from app.preview_creation import save_previews
 
     configs = [
 
@@ -50,6 +51,9 @@ def generate_and_export(upload_assets=True, diagnostics=False):
         )
 
         print(f"{cfg['label']} data created.")
+
+        if cfg["label"] == "1y":
+            save_previews(dict_df=df_dict)
 
         for decimal_sep in [".", ","]:
 

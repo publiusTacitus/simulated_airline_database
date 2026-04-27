@@ -1,5 +1,5 @@
 
-def generate_and_export(upload_assets=True, diagnostics=False):
+def main(upload_assets=True, diagnostics=False):
 
     from core.generate_tables import create_tables
     from core.build_archives import export_to_zip

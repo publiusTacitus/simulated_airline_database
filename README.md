@@ -46,13 +46,14 @@ download portal implemented via [Streamlit](https://simulatedairlinedatabase-mk7
  
 ## Project Structure
 
-| Folder / File | Description                                                                                         |
-|---------------|-----------------------------------------------------------------------------------------------------|
-| `core/`       | Table generation, archive creation, release assets upload, and PostgreSQL insertion                 |
-| `assets/`     | SQL table creation script, database usage notes, and license for inclusion in downloadable archives |
-| `app/`        | Streamlit app for download portal and procurement of required assets                                |
-| `previews/`   | Representative table-samples for display in download portal                                         |
-| `main.py`     | Combined execution of core functions                                                                |
+| Folder / File            | Description                                                                                         |
+|--------------------------|-----------------------------------------------------------------------------------------------------|
+| `core/`                  | Table generation, archive creation, release assets upload, and PostgreSQL insertion                 |
+| `assets/`                | SQL table creation script, database usage notes, and license for inclusion in downloadable archives |
+| `app/`                   | Streamlit app for download portal and procurement of required assets                                |
+| `previews/`              | Representative table-samples for display in download portal                                         |
+| `generate_and_export.py` | Combined execution of core functions                                                                |
+| `core/workshop.ipynb`    | Developement and diagnostics environment                                                            |
 
 ## Core Database Tables (Key Structure)
 

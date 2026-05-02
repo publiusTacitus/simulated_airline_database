@@ -6,7 +6,7 @@ This project simulates a realistic airline database using Python (Pandas) to sup
 finance, weather, and customer behavior.
 It represents a medium-to-large European airline and allows export to SQL, CSV collections, or an Excel snapshot.  
 Variations of the database with differing simulation periods and decimal separators are made available through a
-download portal implemented via [Streamlit](https://simulatedairlinedatabase-mk7tycjddqkhfpfejqywrk.streamlit.app/).
+download portal implemented via [Streamlit](https://simulatedairlinedatabase.streamlit.app/).
 
 ## Simulation Features
 

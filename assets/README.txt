@@ -1,3 +1,6 @@
+----------------------------------------------------------------------------
+Instructions on how to use the Python to SQL loader inside sql_db_creator.py
+----------------------------------------------------------------------------
 
 AIRLINE DATABASE USAGE NOTES
 

@@ -233,6 +233,16 @@ with tab4:
     )
 
     st.link_button(
+        "View Route Demand Dashboard Based on Airline Dataset",
+        "https://flightroutedemandanalysis.streamlit.app/"
+    )
+
+    st.link_button(
+        "View Customer Segment Dashboard Based on Airline Dataset",
+        "https://customersegmentsbookingbehavior.streamlit.app/"
+    )
+
+    st.link_button(
         "Author LinkedIn",
         "https://www.linkedin.com/in/jan-heinrich-sch%C3%BCttler-64b872396/"
     )
